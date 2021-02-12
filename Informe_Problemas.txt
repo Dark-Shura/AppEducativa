@@ -1,0 +1,38 @@
+Alumno  Ruben Orellana Gutierrez
+
+Problemas o errores al avanzar el proyecto:
+
+* tuve problemas al principio al implementar el modulo firebase en el proyecto por que es la primera vez que uso firebase investigue vi algunos videos  y logre  hacer las 
+configuraciones necesesarias para que el proyecto reconosca a firebase  tenia que agregar  un archivo en la carpeta Plugins  firebase.js  con las credenciales de la cuenta creada
+y exportar los servicios para importarlos en el resto del proyecto.
+
+* al principio queria crear un login con GOOGLE pero por alguna razon las configuracion q hacia no respondian correctamente asi que decidi hacer el metodo normal de registrar un correo
+y una contrasenia y asi esta funcinando 
+
+* Para guardar informacion  no tuve problemas en guardar texto de momento es un titulo y una descripcion que se guarda en la Base de Datos y se muestra en el front end , pero ahora estoy
+con un nuevo problema para subir archivos(imagebes, pdf, videos) desde el front end y guardarlos en la base de datos.
+
+*pude lograr guardar archivos en la base de datos y que el link de referencia este enlazado ala coleccion donde se creo  despues de ver algunos videos y revisar la documentacion detalladamente
+me di cuenta que la variable que tenia la direccion url estaba llegando null al metodo ADD este proceso no esta en la documentacion de firebase
+
+* lo que ahora sucede y no entiendo porque es que al guardar toda la informacion al mostrar los datos en la pagina aparece doble toda la lista y cuando se actualiza la pagina vuelve ala normalidad
+voy a revisar eso no es normal que pase eso.
+
+*ahora estoy intentando descargar los archivos de la base de datos probando algunas funciones pero me aparecio un nuevo problema que es el bloqueo por Cors del navegador al momento de querer
+descargar los archivos estoy averiguando sobre como solucionar ese problema.
+
+*logre solucionar el problema de bloqueo de cors probe con una extension del navegador pero no funciono luego en la documentacion de firebase habia una herramienta llamada gsutil una vez instalada
+habia que hacer unas configuraciones en la terminal y se desbloqueo el Cors ahora puedo descargar archivos sin problemas
+
+* Despues de revisar la documentacion de PWA Nuxt realize la implementacion de service worker en mi aplicacion Web
+y funciono correctamente
+
+* problemas al implementar notificaciones desde firebase cloud no se esta registrando
+en el service worker me sale este erro ('FirebaseError: Messaging: We are unable to register the default service worker. Failed ')
+
+* bueno despues de investigar tanto en la documentacion de firebase y de PWA WORKBOX  encontre la manera de implementar correctamente el service worker para que 
+funcionen las notificaciones correctamente primero debemos  loguearnos en la aplicacion si una vez adentro en el panel de docente estara el boton de activar notificaciones
+en la consola podemos observar el Token de notificacion desde el backend de firebase podemos enviar nuestras notificaciones hasta el frontend del cliente incluso si estamos en otra 
+pagina que no sea la aplicacion
+
+* dentro de la carpeta assets hay una carpeta que se llama capturas con las imagenes del sistema funcionando
